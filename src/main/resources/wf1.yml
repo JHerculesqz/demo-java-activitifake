@@ -1,0 +1,4 @@
+Sequence:
+  - start->CommonStep1:flow1
+  - CommonStep1->Step1:flow2
+  - Step1->end:flow3

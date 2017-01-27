@@ -1,0 +1,3 @@
+Sequence:
+  - start->Step2:flow1
+  - Step2->end:flow2

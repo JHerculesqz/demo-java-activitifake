@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WorkflowDemo</title>
+    <script type="text/javascript" src="lib/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/component/AjaxUtils.js"></script>
+    <script type="text/javascript">
+    	$(document).ready(function(){
+    		$("#btnPost1").click(function(){
+    			ajaxUtils.postAjax("/wf1", {}, function(res){
+    				console.log(res);
+    			}, function(err){
+    				console.log(err);
+    			});
+    		});
+    		$("#btnPost2").click(function(){
+    			ajaxUtils.postAjax("/wf2", {}, function(res){
+    				console.log(res);
+    			}, function(err){
+    				console.log(err);
+    			});
+    		});
+    	});
+    </script>
+</head>
+<body>
+	<button id="btnPost1">wf1</button><br/>
+	<button id="btnPost2">wf2</button><br/>
+</body>
+</html>
